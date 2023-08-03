@@ -1,6 +1,7 @@
 package net.donhp.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.donhp.tutorialmod.block.ModBlocks;
 import net.donhp.tutorialmod.item.ModCreativeModeTabs;
 import net.donhp.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -29,6 +30,7 @@ public class TutorialMod {
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
